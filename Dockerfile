@@ -11,6 +11,7 @@ RUN     echo "Ok, this is from the new" && \
         export PATH="$PATH:/usr/local/rvm/bin/" && \
         export PATH="/usr/local/rvm/rubies/$RUBY_VER/bin:$PATH" && \
         rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundler && \
+        rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundle && \
         rvm use $RUBY_VER && \
         export SSL_CERT_DIR=/etc/ssl/certs/ && \
         gem sources --add https://nexus.bluelight.limited/repository/gems-proxy/ && \
