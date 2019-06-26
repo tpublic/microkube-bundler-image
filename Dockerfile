@@ -9,7 +9,7 @@ ENV RUBY_VER=ruby-2.6.0
 RUN     export && \
         export PATH="$PATH:/usr/local/rvm/bin/" && \
         export PATH="/usr/local/rvm/rubies/$RUBY_VER/bin:$PATH" && \
-        rvm use --default $RUBY_VER && \
+        rvm use $RUBY_VER && \
         export SSL_CERT_DIR=/etc/ssl/certs/ && \
         gem sources --add https://nexus.bluelight.limited/repository/gems-proxy/ && \
         gem sources --remove https://rubygems.org/ && \
