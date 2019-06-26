@@ -14,7 +14,7 @@ RUN     echo "Ok, this is from the new" && \
         export SSL_CERT_DIR=/etc/ssl/certs/ && \
         gem sources --add https://nexus.bluelight.limited/repository/gems-proxy/ && \
         gem sources --remove https://rubygems.org/ && \
-        rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundle && \
+        rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundler && \
         gem install bundler
 
 
