@@ -6,7 +6,8 @@ ENV RUBY_VER=ruby-2.6.0
 
    
 # # # Installing bundler
-RUN     export && \
+RUN     echo "Ok, this is from the new"
+        export && \
         export PATH="$PATH:/usr/local/rvm/bin/" && \
         export PATH="/usr/local/rvm/rubies/$RUBY_VER/bin:$PATH" && \
         rvm use $RUBY_VER && \
