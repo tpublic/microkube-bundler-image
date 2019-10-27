@@ -14,9 +14,16 @@ RUN     echo "Ok, this is from the new" && \
         rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundle && \
         rvm use $RUBY_VER && \
         export SSL_CERT_DIR=/etc/ssl/certs/ && \
-        gem sources --add https://nexus.bluelight.limited/repository/gems-proxy/ && \
-        gem sources --remove https://rubygems.org/ && \
         gem install bundler
+
+
+
+### These commands are good, but only when the proxy is actually up and running .....
+
+        # gem sources --add https://REPLACE_ME/repository/gems-proxy/ && \
+        # gem sources --remove https://rubygems.org/ && \
+
+
 
 
 
